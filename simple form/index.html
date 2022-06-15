@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration</title>
+        <!--css style added below-->
+        <link rel="stylesheet" href="app.css"/>
+
+    </head>
+    <body>
+        
+        <form action="">
+            <div class="container">
+                <!--image-->
+            <img src="hi.png" width="100" height="100">
+            <b style="font-style: italic;">nice to have you here!</b>
+
+            <p>Please fill in this form to register with us!</p>
+            <hr/>
+            <!--for First Name-->
+            <label form="fn"><b>First Name</b></label>
+            <input type="text" placeholder="First Name" name="fn" id="fn" required>
+
+            <!--for last name-->
+            <p><label form="ln"><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" name="ln" id="ln" required></p>
+
+            <!--for password-->
+
+           <p><label form="psw"><b>Password </b></label>
+           <input type="password" placeholder="Enter Password" name="psw" id="psw" required></p>
+
+           <!--for password confirmation-->
+
+            <label form="cpsw"><b>Password </b></label>
+            <input type="password" placeholder="Confirm Password" name="cpsw" id="cpsw" required>
+            <hr/>
+            <button class="registerbtn" onclick="doClick()" type="submit">register</button>
+        </form>
+        <script>
+            function doClick() {
+                    alert("  you have successfully registered!");
+                }
+        </script>
+        </div>
+    </body>
+</html>
